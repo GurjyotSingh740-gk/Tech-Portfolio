@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gurjyot Singh — Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Portfolio of Gurjyot Singh — Cloud Computing &amp; DevOps engineer specializing in Kubernetes, Docker, CI/CD, and cloud automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ PIPELINE NAV ============ -->
+<nav class="pipeline-nav" aria-label="Page sections, shown as a deployment pipeline">
+  <div class="pipeline-track">
+    <div class="pipeline-labels">
+      <button class="pipeline-node" data-target="source" aria-current="true">
+        <span class="node-label"><span class="node-index">01</span>source</span>
+      </button>
+      <button class="pipeline-node" data-target="build">
+        <span class="node-label"><span class="node-index">02</span>build</span>
+      </button>
+      <button class="pipeline-node" data-target="deploy">
+        <span class="node-label"><span class="node-index">03</span>deploy</span>
+      </button>
+      <button class="pipeline-node" data-target="verify">
+        <span class="node-label"><span class="node-index">04</span>verify</span>
+      </button>
+      <button class="pipeline-node" data-target="monitor">
+        <span class="node-label"><span class="node-index">05</span>monitor</span>
+      </button>
+    </div>
+    <div class="pipeline-line-row">
+      <span class="pipeline-fill" id="pipelineFill"></span>
+      <span class="dot-col"><span class="node-dot" data-target="source" aria-current="true"></span></span>
+      <span class="dot-col"><span class="node-dot" data-target="build"></span></span>
+      <span class="dot-col"><span class="node-dot" data-target="deploy"></span></span>
+      <span class="dot-col"><span class="node-dot" data-target="verify"></span></span>
+      <span class="dot-col"><span class="node-dot" data-target="monitor"></span></span>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ 01 SOURCE — HERO ============ -->
+  <section id="source" class="stage stage-source">
+    <div class="stage-inner">
+
+      <div class="terminal" role="img" aria-label="Terminal output describing Gurjyot Singh's profile">
+        <div class="terminal-bar">
+          <span class="t-dot t-dot-r"></span><span class="t-dot t-dot-y"></span><span class="t-dot t-dot-g"></span>
+          <span class="terminal-title">gurjyot@cloud:~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <!-- filled by JS typing effect; static fallback below -->
+          <pre class="terminal-fallback">$ whoami
+gurjyot-singh
+
+$ cat profile.yaml
+role: Cloud Engineer / DevOps Engineer (seeking)
+focus: [Kubernetes, Docker, CI/CD, AWS, Azure]
+status: build passing ✓</pre>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow">STAGE 01 · SOURCE</p>
+        <h1>Gurjyot Singh</h1>
+        <p class="hero-role">MCA student, Cloud Computing &amp; DevOps — I build CI/CD pipelines, containerized apps, and cloud automation that ship in one step instead of six.</p>
+        <div class="hero-actions">
+          <a href="#deploy" class="btn btn-primary">View deployments</a>
+          <a href="#monitor" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="gitlog">
+        <p class="gitlog-cmd">$ git log --oneline --decorate education</p>
+        <ul class="gitlog-list">
+          <li>
+            <span class="gitlog-hash">a1c3f9e</span>
+            <span class="gitlog-msg"><strong>Master of Computer Application</strong> — Chandigarh University</span>
+            <span class="gitlog-date">Jul 2024 → Jun 2026</span>
+          </li>
+          <li>
+            <span class="gitlog-hash">7e2bd41</span>
+            <span class="gitlog-msg"><strong>Bachelor of Computer Application</strong> — VIPS, Delhi · CGPA 9.27</span>
+            <span class="gitlog-date">Sep 2021 → Jun 2024</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 02 BUILD — SKILLS ============ -->
+  <section id="build" class="stage stage-build">
+    <div class="stage-inner">
+      <p class="eyebrow">STAGE 02 · BUILD</p>
+      <h2>Toolchain</h2>
+      <p class="stage-sub">$ kubectl get services -o wide</p>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">languages</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">C++</span><span class="chip">Java</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">cloud &amp; automation</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">AWS · EC2 / S3 / IAM</span><span class="chip">Azure · Logic Apps</span><span class="chip">Power Automate</span><span class="chip">GCP Fundamentals</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">ci/cd</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Jenkins</span><span class="chip">GitHub Actions</span><span class="chip">Git</span><span class="chip">Docker Hub</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">containers &amp; orchestration</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Docker</span><span class="chip">Kubernetes (Minikube)</span><span class="chip">Helm</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">infrastructure as code</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Terraform</span><span class="chip">Ansible</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">monitoring</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Prometheus</span><span class="chip">Grafana</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">databases</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">MongoDB</span><span class="chip">Firebase</span><span class="chip">MySQL</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-head">
+            <span class="service-name">ai &amp; llm</span>
+            <span class="status-pill status-running">● running</span>
+          </div>
+          <div class="chip-row">
+            <span class="chip">OpenAI</span><span class="chip">Google Gemini</span><span class="chip">LLM Integration</span><span class="chip">AI Image Generation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 DEPLOY — PROJECTS ============ -->
+  <section id="deploy" class="stage stage-deploy">
+    <div class="stage-inner">
+      <p class="eyebrow">STAGE 03 · DEPLOY</p>
+      <h2>Deployments</h2>
+      <p class="stage-sub">$ kubectl get deployments --namespace=projects</p>
+
+      <div class="deploy-grid">
+
+        <article class="deploy-card">
+          <div class="terminal-bar">
+            <span class="t-dot t-dot-r"></span><span class="t-dot t-dot-y"></span><span class="t-dot t-dot-g"></span>
+            <span class="terminal-title">autoscale-shop/deploy.log</span>
+          </div>
+          <div class="deploy-body">
+            <div class="deploy-top">
+              <h3>Autoscale Shop</h3>
+              <span class="status-pill status-pass">✓ passing</span>
+            </div>
+            <p class="deploy-date">Mar 2026 – Apr 2026</p>
+            <ul class="deploy-list">
+              <li>Cut deployment effort from 6 steps to 1 with a Flask microservices e-commerce app, built on Docker and Kubernetes (Minikube).</li>
+              <li>Scaled automatically using Kubernetes HPA, 1–10 replicas at 50% CPU utilization.</li>
+              <li>Added Prometheus–Grafana monitoring for live visibility into the cluster.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Flask</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Prometheus</span><span class="chip">Grafana</span>
+            </div>
+            <a href="https://github.com/GurjyotSingh740-gk/autoscale-shop" target="_blank" rel="noopener" class="deploy-link">View source →</a>
+          </div>
+        </article>
+
+        <article class="deploy-card">
+          <div class="terminal-bar">
+            <span class="t-dot t-dot-r"></span><span class="t-dot t-dot-y"></span><span class="t-dot t-dot-g"></span>
+            <span class="terminal-title">docker-backup/deploy.log</span>
+          </div>
+          <div class="deploy-body">
+            <div class="deploy-top">
+              <h3>Docker Container Backup to AWS S3</h3>
+              <span class="status-pill status-pass">✓ passing</span>
+            </div>
+            <p class="deploy-date">Oct 2025 – Nov 2025</p>
+            <ul class="deploy-list">
+              <li>Cut backup operations from 5 steps to 1 with an automated Docker volume backup pipeline to AWS S3.</li>
+              <li>Validated 100% of uploads with event-driven checks via AWS Lambda and S3 event notifications.</li>
+              <li>Improved reliability using AWS CLI, IAM roles, and tar.gz compression.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Docker</span><span class="chip">AWS Lambda</span><span class="chip">S3</span><span class="chip">IAM</span>
+            </div>
+            <span class="deploy-link deploy-link-muted">Private repository</span>
+          </div>
+        </article>
+
+        <article class="deploy-card">
+          <div class="terminal-bar">
+            <span class="t-dot t-dot-r"></span><span class="t-dot t-dot-y"></span><span class="t-dot t-dot-g"></span>
+            <span class="terminal-title">support-ticketing/deploy.log</span>
+          </div>
+          <div class="deploy-body">
+            <div class="deploy-top">
+              <h3>Customer Support Ticketing System</h3>
+              <span class="status-pill status-pass">✓ passing</span>
+            </div>
+            <p class="deploy-date">Mar 2025 – Apr 2025</p>
+            <ul class="deploy-list">
+              <li>Simplified support handling from 4 steps to 1 with an Azure-based system using Microsoft Forms, Logic Apps, Power Automate, Outlook, and SharePoint.</li>
+              <li>Auto-generated ticket IDs, assigned priorities, and sent automated email notifications.</li>
+              <li>Gave teams real-time status visibility across multiple departments.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Azure Logic Apps</span><span class="chip">Power Automate</span><span class="chip">SharePoint</span>
+            </div>
+            <a href="https://github.com/GurjyotSingh740-gk/CustomerSupportTicketingSystem" target="_blank" rel="noopener" class="deploy-link">View source →</a>
+          </div>
+        </article>
+
+        <article class="deploy-card">
+          <div class="terminal-bar">
+            <span class="t-dot t-dot-r"></span><span class="t-dot t-dot-y"></span><span class="t-dot t-dot-g"></span>
+            <span class="terminal-title">ai-desktop-assistant/deploy.log</span>
+          </div>
+          <div class="deploy-body">
+            <div class="deploy-top">
+              <h3>AI Desktop Assistant</h3>
+              <span class="status-pill status-pass">✓ passing</span>
+            </div>
+            <p class="deploy-date">Sep 2023 – May 2024</p>
+            <ul class="deploy-list">
+              <li>Built a Python desktop assistant with Gemini AI, PyQt5, and speech recognition for daily computing tasks.</li>
+              <li>Integrated 10 image-generation models with natural language prompt support.</li>
+              <li>Added 4 interactive games, persistent memory, and an SQLite leaderboard.</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">Gemini AI</span><span class="chip">PyQt5</span><span class="chip">SQLite</span>
+            </div>
+            <a href="https://github.com/GurjyotSingh740-gk/AI-Desktop-Assistant-with-GUI" target="_blank" rel="noopener" class="deploy-link">View source →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 VERIFY — CERTIFICATIONS ============ -->
+  <section id="verify" class="stage stage-verify">
+    <div class="stage-inner">
+      <p class="eyebrow">STAGE 04 · VERIFY</p>
+      <h2>Test Suite</h2>
+      <p class="stage-sub">$ run-tests --suite=certifications</p>
+
+      <div class="cert-grid">
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/AWS/AWS_Cloud_Foundations.png" alt="AWS Academy Cloud Foundations certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">AWS Academy Cloud Foundations</span>
+            <a class="cert-link-hint" href="https://www.credly.com/badges/cda0132a-fa88-4b08-9a6b-8320e6136448/linked_in?t=t262yd" target="_blank" rel="noopener" aria-label="AWS Academy Cloud Foundations — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/AWS/aws-educate-introduction-to-generative-ai-training-.png" alt="AWS Academy Generative AI Foundations certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">AWS Academy Generative AI Foundations</span>
+            <a class="cert-link-hint" href="https://www.credly.com/earner/earned/badge/fa992033-e692-4544-a784-6b8c546863e5" target="_blank" rel="noopener" aria-label="AWS Academy Generative AI Foundations — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/LinkedIn/MicrosoftAzureAI.png" alt="Microsoft Azure AI Fundamentals certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Microsoft Azure AI Fundamentals</span>
+            <a class="cert-link-hint" href="https://www.linkedin.com/learning/certificates/c6180d2923fb8c4e715039fda02619857fae2f1c44fa504c908f7069e758a3f6" target="_blank" rel="noopener" aria-label="Microsoft Azure AI Fundamentals — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/Google/google-cloud-computing-foundations-certificate.png" alt="Google Cloud Foundations certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Google Cloud Foundations</span>
+            <a class="cert-link-hint" href="https://www.credly.com/earner/earned/badge/8b45841e-5ce6-4fd3-ab21-88ec4e6cae27" target="_blank" rel="noopener" aria-label="Google Cloud Foundations — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/RedHat/RedHat_Ansible_Certificate_Conv.png" alt="Red Hat Linux Automation with Ansible certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Red Hat Linux Automation with Ansible</span>
+            <a class="cert-link-hint" href="https://www.credly.com/badges/e28fe9af-b09a-4901-b8f4-99a79422f087" target="_blank" rel="noopener" aria-label="Red Hat Linux Automation with Ansible — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/LinkedIn/DockerFoundations.png" alt="Docker Foundations certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Docker Foundations</span>
+            <a class="cert-link-hint" href="https://www.linkedin.com/learning/certificates/e9d6324db606a7afb1b22ca42e38faa2d822777831c16664b24ee580e8d6adac" target="_blank" rel="noopener" aria-label="Docker Foundations — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/LinkedIn/GitHubProfessionalCertificate.png" alt="GitHub Professional Certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">GitHub Professional Certificate</span>
+            <a class="cert-link-hint" href="https://www.linkedin.com/learning/certificates/7158bbf01bfd4d196777196afa0ab7ead37c460667f98310902dee83f21bd211" target="_blank" rel="noopener" aria-label="GitHub Professional Certificate — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/LinkedIn/GitHub_Copilot_Prof.png" alt="GitHub Professional Certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">GitHub Professional Certificate</span>
+            <a class="cert-link-hint" href="https://www.linkedin.com/learning/certificates/73ec05471aa8fd839a59854eac74e03586420b94289c87569407d028eab9c9cd" target="_blank" rel="noopener" aria-label="GitHub Professional Certificate — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/LinkedIn/AIPairProgramming.png" alt="GitHub Professional Certificate" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">GitHub Professional Certificate</span>
+            <a class="cert-link-hint" href="https://www.linkedin.com/learning/certificates/5f9f7a973c30c887391eebcf62e6fc732ad3c656c88ef80ba6a81735eaf49b4c" target="_blank" rel="noopener" aria-label="AI Pair Programming with GitHub Copilot — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/Coursera/Coursera_Duke_Univ.png" alt="Cloud Virtualization, Containers and APIs certificate, Duke University" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Cloud Virtualization, Containers and APIs — Duke University</span>
+            <a class="cert-link-hint" href="https://www.coursera.org/account/accomplishments/verify/Y5T2HC052M5A" target="_blank" rel="noopener" aria-label="Cloud Virtualization, Containers and APIs, Duke University — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/Coursera/Coursera_Dynamic_Web.png" alt="Cloud Virtualization, Containers and APIs certificate, Duke University" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Dynamic Web Programming</span>
+            <a class="cert-link-hint" href="https://www.coursera.org/account/accomplishments/verify/WIRCNZHNANH0" target="_blank" rel="noopener" aria-label="Dynamic Web Programming — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/Coursera/Coursera_ModelTraining.png" alt="Cloud Virtualization, Containers and APIs certificate, Duke University" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Model Training & Evaluation</span>
+            <a class="cert-link-hint" href="https://www.coursera.org/account/accomplishments/verify/OWD2BGEA3JA2" target="_blank" rel="noopener" aria-label="Model Training and Evaluation — view credential">View credential →</a>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-thumb">
+            <span class="cert-status">✓ verified</span>
+            <span class="cert-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              <span>Add certificate image</span>
+            </span>
+            <img src="certificates/Coursera/Coursera_AIandML.png" alt="Cloud Virtualization, Containers and APIs certificate, Duke University" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Foundations of AI and Machine Learning</span>
+            <a class="cert-link-hint" href="https://www.coursera.org/account/accomplishments/verify/3KI6WLBZ9ETO" target="_blank" rel="noopener" aria-label="Foundations of AI and Machine Learning — view credential">View credential →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="test-summary">13 passed · 0 failed · 13 total</p>
+    </div>
+  </section>
+
+  <!-- ============ 05 MONITOR — CONTACT ============ -->
+  <section id="monitor" class="stage stage-monitor">
+    <div class="stage-inner">
+      <p class="eyebrow">STAGE 05 · MONITOR</p>
+      <h2>Alerting Channels</h2>
+      <p class="stage-sub">Open to Cloud Engineer / DevOps Engineer roles — reach out on any channel below.</p>
+
+      <div class="alert-grid">
+        <a class="alert-card" href="mailto:sgurjyot740@gmail.com">
+          <span class="alert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          <span class="alert-meta">
+            <span class="alert-label">email</span>
+            <span class="alert-value">sgurjyot740@gmail.com</span>
+          </span>
+        </a>
+
+        <a class="alert-card" href="tel:+919811240859">
+          <span class="alert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2z"/></svg>
+          </span>
+          <span class="alert-meta">
+            <span class="alert-label">phone</span>
+            <span class="alert-value">+91 98112 40859</span>
+          </span>
+        </a>
+
+        <a class="alert-card" href="www.linkedin.com/in/gurjyot-singh-6b75a0232" target="_blank" rel="noopener">
+          <span class="alert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r="0.6" fill="currentColor"/><path d="M12 16v-3a2 2 0 0 1 4 0v3"/><line x1="12" y1="11" x2="12" y2="16"/></svg>
+          </span>
+          <span class="alert-meta">
+            <span class="alert-label">linkedin</span>
+            <span class="alert-value">linkedin.com/in/gurjyot-singh</span>
+          </span>
+        </a>
+
+        <a class="alert-card" href="https://github.com/GurjyotSingh740-gk" target="_blank" rel="noopener">
+          <span class="alert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18c-4 1-4-2-6-2"/><path d="M9 18v-2.2c0-.6.2-1 .5-1.3-2.8-.3-5.5-1.4-5.5-6A4.6 4.6 0 0 1 5.3 5a4.3 4.3 0 0 1 .1-3.2s1.5-.5 3.6 1a12.7 12.7 0 0 1 6 0c2.1-1.5 3.6-1 3.6-1a4.3 4.3 0 0 1 .1 3.2 4.6 4.6 0 0 1 1.3 3.5c0 4.6-2.7 5.7-5.5 6 .3.3.5.8.5 1.4V20"/></svg>
+          </span>
+          <span class="alert-meta">
+            <span class="alert-label">github</span>
+            <span class="alert-value">github.com/GurjyotSingh740-gk</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="uptime-line">status: <span class="status-pill status-pass">✓ open to opportunities</span> <span id="liveClock"></span></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Gurjyot Singh — deployed with care, no rollback needed.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
